@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  poster:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: poster-generator
+    container_name: poster
+    environment:
+      WEBHOOK_ADDRESS: https://qyapi.weixin.qq.com
+    command: ["sh", "/poster/scripts/poster.sh"]
