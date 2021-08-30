@@ -66,4 +66,4 @@ contentArr.forEach((value, index) => {
 posterContext.drawImage(posterContentCanvas, 59, 76);
 
 // 生成图片
-posterCanvas.createPNGStream().pipe(fs.createWriteStream(translatePath(posterGeneratorPath)))
+posterCanvas.createPNGStream({compressionLevel: 1}).pipe(fs.createWriteStream(translatePath(posterGeneratorPath)))
