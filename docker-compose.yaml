@@ -8,5 +8,6 @@ services:
     image: poster-generator
     container_name: poster
     environment:
-      WEBHOOK_ADDRESS: https://qyapi.weixin.qq.com
-    command: ["sh", "/poster/scripts/poster.sh"]
+      WEBHOOK_ADDRESS: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=55c85adc-0630-4934-bc61-386b8a37f66a
+      HOST: ''
+    command: ["bash", "/poster/scripts/poster.sh"]
