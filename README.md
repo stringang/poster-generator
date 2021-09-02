@@ -5,6 +5,9 @@
 ## Run
 
 ```shell
+export WEBHOOK_ADDRESS=https://xxx.xxx.com
+docker run -d stringang/poster-generator
+# build image
 docker-compose run -d
 ```
 
