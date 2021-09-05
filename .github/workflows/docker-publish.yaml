@@ -23,7 +23,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ${{ IMAGE_NAME }}
+          images: stringang/poster-generator
           tags: |
             type=ref,event=branch
             type=semver,pattern={{raw}}
